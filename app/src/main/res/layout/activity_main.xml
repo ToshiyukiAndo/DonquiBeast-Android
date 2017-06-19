@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gaasii.donquebeast2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.gaasii.donquebeast2.MySurfaceView
+        android:id="@+id/mySurfaceView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+
+        <ImageButton
+            android:id="@+id/capture_button"
+            android:layout_width="120px"
+            android:layout_height="110px"
+            android:background="@drawable/camera4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+
+        <ImageButton
+            android:id="@+id/laps_button"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:background="@drawable/video2"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/capture_button"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/toumei" />
+
+            <ImageView
+                android:id="@+id/leftButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/sankaku_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/forwardButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/sankaku_up" />
+
+            <ImageView
+                android:id="@+id/noButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/maru" />
+
+            <ImageView
+                android:id="@+id/backwardButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/sankaku_down" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/aButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/toumei" />
+
+            <ImageView
+                android:id="@+id/rightButton"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/sankaku_right" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
